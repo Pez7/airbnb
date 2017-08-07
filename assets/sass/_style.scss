@@ -2,3 +2,23 @@ body{
 	margin:0;
 	padding:0;
 }
+#logo{
+	width:112px;
+}
+nav{
+	background-color:transparent;
+	ul{
+		li{
+			a{
+				font-size:19px;
+				padding-top: 3px;
+				
+			}
+		}
+	}
+}
+
+.btn, .btn-floating, .btn-large, .card, .card-panel, .collapsible, .dropdown-content, .side-nav, .toast, .z-depth-1, nav{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
