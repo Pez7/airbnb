@@ -90,3 +90,57 @@ footer{
 .line:hover{
 	text-decoration:underline;
 }
+input:not([type]),
+input[type=date]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=search]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=text]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=url]:not(.browser-default),
+textarea.materialize-textarea {
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    height: 5rem;
+    width: 100%;
+    font-size: 25px;
+    margin: 0 0 20px;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.input-field label:not(.label-icon).active {
+    -webkit-transform: translateY(-14px) scale(.8);
+    transform-origin: 0 0;
+}
+.input-field label {
+    color: #535353;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 24px;
+    cursor: text;
+    transition: -webkit-transform .2s ease-out;
+    text-align: initial;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    pointer-events: none;
+}
+input:not([type]):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]), 
+input[type=number]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: none;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+}
