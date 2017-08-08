@@ -5,13 +5,37 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Alquileres vacacionales, casas, experiencias y lugares - Airbnb</title>
 	<link rel="shortcut icon" type="image/x-icon" href="dist/airbnb.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
-	
-	<script src="dist/js/script.js"></script>
+	<!--<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><img src="dist/img/logo.png" alt=""></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
+		</div>
+	</nav>-->
+	<section id="mapa" >
+	<div class="container container-mapa">
+		<div class="col-sm-12 col-xs-12 text-center mapa" id="map">
+			<!--mapa-->
+		</div>
+		<div class="row">
+			<div class="text-center col-sm-12 col-xs-12 form">
+				<input class="input-destino form-control" id="destino" placeholder="Ingrese su destino"><br>
+				<button type="button" class="btn btn-default" id="destinoBoton">Destino</button>
+			</div>
+		</div>
+	</div>
+</section>
 
+	<script src="dist/js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5exwEnih1W3mew_yhLFUeElrI7WWSm0&libraries=places&callback=initMap"></script>
 </body>
 </html>
-
 
