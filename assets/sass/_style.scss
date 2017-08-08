@@ -1,4 +1,8 @@
+
 body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 	margin:0;
 	padding:0;
 }
@@ -13,7 +17,7 @@ nav{
 			a{
 				font-size:19px;
 				padding-top: 3px;
-				
+				color:#5A5A5A;
 			}
 		}
 	}
@@ -24,3 +28,23 @@ nav{
 	box-shadow: none;
 }
 
+#first{
+	div{
+		div{
+			h1{
+				font-size: 59px;
+				font-weight: 700;
+				color: #FF5A5F;
+				padding-top: 65px;
+			}
+			p{
+				font-size: 51px;
+				color: #484848;
+				margin-top: -31px;
+			}
+		}
+	}
+}
+footer{
+   flex: 1 0 auto;
+}
