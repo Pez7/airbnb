@@ -47,4 +47,25 @@ nav{
 }
 footer{
    flex: 1 0 auto;
+   border-top: 1px solid rgb(169, 169, 169);
+   h5{
+   	color:#535353;
+   }
+   a{
+   	color: #797979;
+   	font-size:16px;
+   }
+}
+#btn-footer{
+	li{
+		@include boton-li();
+
+		a{
+			color:black;
+			    font-size: 26px;
+		}
+	}
+}
+.page-footer, .pagination li.active {
+    background-color: #fff;
 }
