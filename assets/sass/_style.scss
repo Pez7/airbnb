@@ -61,10 +61,17 @@ body{
 	}
 
 //paginación
+.paginacion{
+	small{
+		font-size: 15px;
+    	padding-left: 51px;
+    	font-weight: 700;
+	}
+}
 .pagination{
 	li{
 		background-color: white;
-		border: 1px solid $star-color;
+		border: 1px solid grey;
 		a{
 			color: $star-color;
 		}
