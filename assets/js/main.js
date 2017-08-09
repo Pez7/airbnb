@@ -3,6 +3,8 @@
      $('select').material_select();
 
      /* Mapa*/
+
+
      var map;
      var miUbicacion;
      var latitud, longitud;

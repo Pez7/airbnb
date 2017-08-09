@@ -1,4 +1,4 @@
-    body {
+            body {
         margin: 0;
         padding: 0;
     }
@@ -65,54 +65,73 @@
     input {
         border: 1px solid grey;
     }
-    /*.container-mapa{
-    padding: 100px;
-    margin: 0px;
-    .row{
-    	.tarjetasJson{
-    		width:100%;
-    		padding:20px;
-    		.fotoprecio{
-    			background-image:url(../img/thumbhabitacion.png);
-    			background-size:cover;
-    			background-repeat: no-repeat;
-    			width:100%
-    			height: auto;
-    		}
-    	}
-
+    
+    .container-mapa {
+        padding: 100px;
+        margin: 0px;
+        .row {
+            .tarjetasJson {
+                width: 100%;
+                padding: 20px;
+                .fotoprecio {
+                    background-image: url(../img/thumbhabitacion.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100% height: auto;
+                }
+            }
+        }
+        .mapa {
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+        }
     }
-	.mapa{
-    	width: 100%;
-    	height: 100vh;
-    	padding: 0;
-    }
-}
-.form{
-    position: absolute;
-    left: 0px;
-    bottom: 5%;
-    width: 100%;
-    height: auto;
-    input{
-    	width: auto;
-    	height: 60px;
-    	border-radius: 13px;
-	}
-	button{
-    width: auto;
-    height: 60px;
-    border-radius: 13px;
-    color: white;
-    background-color: #8179A8;
-    font-size: 22px;
-    border-color: #adadad;
-}
-.btn-default:hover{
-    color: #8179A8;
-    background-color: white;
-    border-color: #adadad;
-}
-}
-
-*/
+    
+    .form {
+        position: absolute;
+        left: 0px;
+        bottom: 5%;
+        width: 100%;
+        height: auto;
+        input {
+            width: auto;
+            height: 60px;
+            border-radius: 13px;
+            //paginación
+            .paginacion {
+                small {
+                    font-size: 15px;
+                    padding-left: 51px;
+                    font-weight: 700;
+                }
+            }
+            .pagination {
+                li {
+                    background-color: white;
+                    border: 1px solid grey;
+                    a {
+                        color: $star-color;
+                    }
+                }
+                .flecha {
+                    border: none;
+                }
+            }
+            .pagination {
+                li.active {
+                    background-color: white;
+                    border: 1px solid $star-color;
+                    a {
+                        color: $star-color;
+                        font-weight: 700;
+                    }
+                }
+                li.disabled {
+                    background-color: white;
+                    a {
+                        color: $star-color;
+                        font-weight: 700;
+                    }
+                }
+            }
