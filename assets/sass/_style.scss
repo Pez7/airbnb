@@ -38,7 +38,7 @@ nav{
 				padding-top: 65px;
 			}
 			p{
-				font-size: 51px;
+				font-size: 42px;
 				color: #484848;
 				margin-top: -31px;
 			}
@@ -108,7 +108,7 @@ textarea.materialize-textarea {
     outline: 0;
     height: 5rem;
     width: 100%;
-    font-size: 25px;
+    font-size: 12px;
     margin: 0 0 20px;
     padding: 0;
     -webkit-box-shadow: none;
@@ -126,7 +126,7 @@ textarea.materialize-textarea {
     top: 0;
     left: 0;
     height: 100%;
-    font-size: 24px;
+    font-size: 23px;
     cursor: text;
     transition: -webkit-transform .2s ease-out;
     text-align: initial;
@@ -147,13 +147,17 @@ input[type=number]:not(.browser-default):focus:not([readonly]), input[type=passw
 #destinoBoton{
 	background-color:$button-color;
 }
-#select{
+
+div{
 	label{
 		font-size:19px;
 		color: #535353;
 	}
-}
-select{
-	display:block;
-	border:none;
+	select{
+		display:block;
+		border:none;
+		option{
+			font-size:12px;
+		}
+	}
 }
