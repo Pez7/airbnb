@@ -3,20 +3,87 @@ body{
 	margin:0;
 	padding:0;
 }
-/*Mapa*/
-.container-mapa{
-    padding: 0;
-    margin: 0;
+/*tarjetas y mapa*/
+.columnas-json{
+	margin: 30px;
+	.row{
+		.columnasChicas{
+			width:60%;
+		}
+	}
+}
+.tarjetasJson{
+	.foto{
+		padding:0px;
+		height: auto;
+		border-top: 1px solid #EEEEEE;
+		.thumb{
+			padding-top: 20px;
+		}
+		.fa-heart-o{
+			color: white;
+			position: relative;
+			top: -229px;
+    		left: 311px;
+			}
+		.precio{
+			background-color: rgba(0, 0, 0, 0.5); 
+			color: white;
+			position: relative;
+			top: -85px;
+    		left: 0;
+    		padding-left: 15px;
+    		width: 30%
+		}
+	}
+}
+.usuarioDatos{
+		margin-top: -85px;
+		.usuarioFoto{
+			border: 3px solid white;
+			position: relative;
+    		left: 280px;
+		}
+		h5{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 15px;
+		}
+		i{
+			color:#53E4AF;
+		}
+	}
+
+
+
+
+
+
+/*.container-mapa{
+    padding: 100px;
+    margin: 0px;
+    .row{
+    	.tarjetasJson{
+    		width:100%;
+    		padding:20px;
+    		.fotoprecio{
+    			background-image:url(../img/thumbhabitacion.png);
+    			background-size:cover;
+    			background-repeat: no-repeat;
+    			width:100%
+    			height: auto;
+    		}
+    	}
+
+    }
 	.mapa{
     	width: 100%;
     	height: 100vh;
     	padding: 0;
     }
 }
-
-
-
-
 .form{
     position: absolute;
     left: 0px;
@@ -24,12 +91,12 @@ body{
     width: 100%;
     height: auto;
     input{
-    	width: 100%;
+    	width: auto;
     	height: 60px;
     	border-radius: 13px;
 	}
 	button{
-    width: 100%;
+    width: auto;
     height: 60px;
     border-radius: 13px;
     color: white;
@@ -44,5 +111,5 @@ body{
 }
 }
 
-
+*/
 
