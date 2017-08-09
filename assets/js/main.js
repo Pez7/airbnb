@@ -2,6 +2,8 @@
 
      $('select').material_select();
 
+
+     //inicializar price range
      var slider = document.getElementById('test-slider');
      noUiSlider.create(slider, {
          start: [20, 300000],
