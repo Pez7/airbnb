@@ -11,9 +11,34 @@
      //Local storage datos fechas llegada
 
      var llegadaGuardada = $("#llegada").text(localStorage.getItem("llegada"));
-     $("#llegada").append(llegadaGuardada);
+     $(".entrada").append(llegadaGuardada);
 
      //tomar datos y q aparezcan en inputs search
+
+
+
+     //tomar datos de los checkbox
+
+     var $filterCheckboxes = $('.filter-checkboxes');
+
+     $filterCheckboxes.on('change', function() {
+
+         var selectedFilters = {};
+
+         $filterCheckboxes.filter(':checked').each(function() {
+
+             if (!selectedFilters.hasOwnProperty(this.name)) {
+                 selectedFilters[this.name] = [];
+             }
+
+             selectedFilters[this.name].push(this.value); // esto crea selected filters
+
+         });
+
+     });
+
+
+
 
  });
 
@@ -29,8 +54,6 @@
          zoomControl: false,
          streetViewControl: false
      });
-
-     alert("hola mundo");
 
      function initialize() { //autocompletar direcciones
          var inputDestino = document.getElementById('destino');
