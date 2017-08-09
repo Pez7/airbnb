@@ -59,6 +59,425 @@
 			</div>
 		</div>
 	</section>
+    <!-- search page (sección fa + fran)-->
+	<section class="columnas-json">
+        <div class="row">
+            <div class="col l6 columnasChicas">
+                <!-- filtros -->
+                <div class="row valign-wrapper">
+                    <div class="col m3 l3">
+                        <p>Fechas</p>
+                    </div>
+                    <div class="col m3 l3">
+                        <input placeholder="Entrada" id="llegada" type="text" class="validate browser-default">
+                    </div>
+                    <div class="col m3 l3">
+                        <input placeholder="Salida" id="ida" type="text" class="validate browser-default">
+                    </div>
+                    <div class="col m3 l3">
+                        <select class="browser-default">
+						<option value="" disabled selected>Huéspedes</option>
+						<option value="1">1 huésped</option>
+						<option value="2">2 huéspedes</option>
+						<option value="3">3 huéspedes</option>
+						</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <hr>
+        <div class="row">
+            <div class="col m3 l3">
+                <p>Tipo de habitación</p>
+            </div>
+                    <div class="col m3 l3">
+                        <form action="#">
+                            <p>
+                                <input type="checkbox" id="casa" />
+                                <label for="casa">Casa entera</label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col m3 l3">
+                        <form action="#">
+                            <p>
+                                <input type="checkbox" id="habitacion" />
+                                <label for="habitacion">Habitación grande</label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col m3 l3">
+                        <form action="#">
+                            <p>
+                                <input type="checkbox" id="habitacion-c" />
+                                <label for="habitacion-c">Habitación compartida</label>
+                            </p>
+                        </form>
+            		</div>
+        </div>
+                <hr>
+                <div class="row">
+                    <div class="col m3 l3">
+                        <p>Rango de precios</p>
+                    </div>
+                    <div class="col m9 l9">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test5" min="0" max="500000" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col m3 l3">
+                        <p>Reserva Inmediata</p>
+                    </div>
+                    <div class="col m6 l6">
+                        <p>Anuncios que no requieren que el anfitrión acepte la solicitud</p>
+                    </div>
+                    <div class="col m3 l3">
+                        <!-- Disabled Switch -->
+                        <div class="switch">
+                            <label>
+						      Off
+						      <input type="checkbox">
+						      <span class="lever"></span>
+						      On
+						    </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+	</section>
+                <!--search page: advanced filter-->
+	<section class="advanced-filter">
+                    <!--fila 0-->
+                    <div class="row">
+                        <div class="col m12 l12">
+                            <div class="col s6 left-align">
+                                <a class="waves-effect waves-light btn filtros">Filtros</a>
+                            </div>
+                            <div class="col m6 l6">
+                                <p><b>Solo hay un 14% de alojamientos disponibles para estas fechas.</b></p>
+                                <p>Te recomendamos que reserves un alojamiento lo antes posible</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- fila 1 -->
+                        <div class="row">
+                            <div class="col m12 l12">
+                                <div class="col m3 l3">
+                                    <p>Tamaño</p>
+                                </div>
+
+                                <div class="input-field col m3 l3">
+                                    <select>
+      						<option value="" disabled selected>Habitaciones</option>
+      						<option value="1">1 persona</option>
+      						<option value="2">2 personas</option>
+      						<option value="3">3 personas</option>
+    				</select>
+                                </div>
+
+                                <div class="input-field col m3 l3">
+                                    <select>
+      						<option value="" disabled selected>Baños</option>
+      						<option value="1">1</option>
+      						<option value="2">2</option>
+      						<option value="3">3</option>
+    								</select>
+                                </div>
+
+                                <div class="input-field col m3 l3">
+                                    <select>
+								<option value="" disabled selected>Camas</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+						</select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="hr1">
+
+                        <!-- fila 2 -->
+
+                        <div class="row">
+                            <div class="col m12 l12">
+
+                                <div class="col m3 l3">
+                                    <p>Opciones</p>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="option1" />
+                                            <label for="option1">Superhost Quédate en casa de anfitriones excepcionales <a>Más información</a></label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+
+                                </div>
+
+                                <div class="col m3 l3">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="hr1">
+
+                        <!-- fila 3 -->
+
+                        <div class="row">
+                            <div class="col m12 l12">
+
+                                <div class="col m3 l3">
+                                    <p>Servicios</p>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv1" />
+                                            <label for="serv1">Internet Inalámbrico (wifi)</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv2" />
+                                            <label for="serv2">TV</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv3" />
+                                            <label for="serv3">Cocina</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="hr1">
+
+                        <!-- fila 4 -->
+                        <div class="row">
+                            <div class="col m12 l12">
+
+                                <div class="col m3 l3">
+                                    <p>Servicios</p>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv4" />
+                                            <label for="serv4">Edificio con ascensor</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv5" />
+                                            <label for="serv5">Gimnasio</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="serv6" />
+                                            <label for="serv6">Parking gratuíto Incluído</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="hr1">
+
+                        <!-- fila 5 -->
+                        <div class="row">
+                            <div class="col m12 l12">
+
+                                <div class="col m3 l3">
+                                    <p>Normas de la casa</p>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="norm1" />
+                                            <label for="norm1">Admite mascotas</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="norm2" />
+                                            <label for="norm2">Apto para eventos</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="norm3" />
+                                            <label for="norm3">Apto para fumadores</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="hr1">
+
+                        <!-- fila 6 -->
+                        <div class="row">
+                            <div class="col m12 l12">
+
+                                <div class="col m3 l3">
+                                    <p>Vecindario</p>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="vecindario1" />
+                                            <label for="vecindario1">SoMa</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="vecindario2" />
+                                            <label for="vecindario2">Mission District</label>
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <div class="col m3 l3">
+                                    <form action="#">
+                                        <p>
+                                            <input type="checkbox" id="vecindario3" />
+                                            <label for="vecindario3">Daly City</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- botones -->
+
+                        <div class="row">
+                            <div class="col m12 l12">
+                                <div class="col m4 offset-m7 l3 offset-l7">
+                                    <a class="waves-effect waves-light btn">Cancelar</a>
+                                </div>
+                                <div class="col m4 l1">
+                                    <a class="waves-effect waves-light btn">Aplicar filtros</a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- tarjetas -->
+                <div class="row">
+                    <div class="col l6 tarjetasJson">
+                        <div class="foto">
+                            <img class="thumb responsive-img" src="dist/img/thumbhabitacion.png">
+                            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                            <div class="precio">$35.000 </div>
+                        </div>
+                        <div class="usuarioDatos">
+                            <img class="usuarioFoto circle responsive-img" src="dist/img/andrea.jpg">
+                            <h5 class="titulo">Titulo Json</h5>
+                            <p class="subtitulo">Esta es la bajada de la foto <i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i></p>
+                        </div>
+                    </div>
+                    <div class="col l6 tarjetasJson">
+                        <div class="foto">
+                            <img class="thumb responsive-img" src="dist/img/thumbhabitacion.png">
+                            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                            <div class="precio">$35.000 </div>
+                        </div>
+                        <div class="usuarioDatos">
+                            <img class="usuarioFoto circle responsive-img" src="dist/img/andrea.jpg">
+                            <h5 class="titulo">Titulo Json</h5>
+                            <p class="subtitulo">Esta es la bajada de la foto <i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l6 tarjetasJson">
+                        <div class="foto">
+                            <img class="thumb responsive-img" src="dist/img/thumbhabitacion.png">
+                            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                            <div class="precio">$35.000 </div>
+                        </div>
+                        <div class="usuarioDatos">
+                            <img class="usuarioFoto circle responsive-img" src="dist/img/andrea.jpg">
+                            <h5 class="titulo">Titulo Json</h5>
+                            <p class="subtitulo">Esta es la bajada de la foto <i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i></p>
+                        </div>
+                    </div>
+                    <div class="col l6 tarjetasJson">
+                        <div class="foto">
+                            <img class="thumb responsive-img" src="dist/img/thumbhabitacion.png">
+                            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                            <div class="precio">$35.000 </div>
+                        </div>
+                        <div class="usuarioDatos">
+                            <img class="usuarioFoto circle responsive-img" src="dist/img/andrea.jpg">
+                            <h5 class="titulo">Titulo Json</h5>
+                            <p class="subtitulo">Esta es la bajada de la foto <i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i><i class="tiny material-icons">star</i></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col l6 text-center mapa" id="map">
+                    <!--aquí se dibuja el mapa-->
+                </div>
+
+            </div>
+    </section>
+
+    <!-- paginacion -->
+
+    </section>
+    <section class="paginacion">
+        <small>1-18 de más de 300 alquileres</small>
+        <ul class="pagination">
+            <li class="disabled flecha"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect flecha"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </section>
+<!-- Carousel baja al darle filtros -->
 	<section>
 		<div class="carousel">
 			<a class="carousel-item" href="#one!"><img src="assets/img/img1.png"></a>
@@ -70,8 +489,8 @@
 			<a class="carousel-item" href="#five!"><img src="assets/img/img8.png"></a>
 		</div>
 	</section>
-        <footer class="page-footer">
-          <div class="container">
+	<footer class="page-footer">
+		<div class="container">
             <div class="row">
 				<div class="col m3">
 					<ul id="idiomas" class="dropdown-content">
@@ -139,8 +558,10 @@
 	        </div>
             </div>
           </div>
-        </footer>
+	</footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5exwEnih1W3mew_yhLFUeElrI7WWSm0&libraries=places&callback=initMap"></script>
 	<script src="https://use.fontawesome.com/1625bb79ec.js"></script>
 	<script src="dist/js/script.js"></script>
 </body>
+
 </html>

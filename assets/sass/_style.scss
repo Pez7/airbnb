@@ -1,8 +1,7 @@
-
 body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 	margin:0;
 	padding:0;
 }
@@ -46,15 +45,15 @@ nav{
 	}
 }
 footer{
-   flex: 1 0 auto;
-   border-top: 1px solid rgb(169, 169, 169);
-   h5{
-   	color:#535353;
-   }
-   a{
-	color: #797979;
-	font-size:16px;
-   }
+	flex: 1 0 auto;
+	border-top: 1px solid rgb(169, 169, 169);
+	h5{
+		color:#535353;
+	}
+	a{
+		color: #797979;
+		font-size:16px;
+	}
 }
 #btn-footer{
 	li{
@@ -68,12 +67,12 @@ footer{
 	}
 }
 .page-footer, .pagination li.active {
-    background-color: #fff;
+	background-color: #fff;
 }
 .light, .page-footer .footer-copyright {
-    font-weight: 300;
-    padding: 34px 0;
-    background-color: #fff;
+	font-weight: 300;
+	padding: 34px 0;
+	background-color: #fff;
 }
 #list{
 	padding-top: 30px;
@@ -81,8 +80,8 @@ footer{
 		font-size: 20px;
 		padding: 0 20px 0 0;
 		img{
-    		width: 23px;
-    		margin-right: 7px;
+			width: 23px;
+			margin-right: 7px;
 		}
 	}
 }
@@ -103,36 +102,36 @@ input[type=text]:not(.browser-default),
 input[type=time]:not(.browser-default),
 input[type=url]:not(.browser-default),
 textarea.materialize-textarea {
-    border: none;
-    border-radius: 0;
-    outline: 0;
-    height: 5rem;
-    width: 100%;
-    font-size: 12px;
-    margin: 0 0 20px;
-    padding: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+	border: none;
+	border-radius: 0;
+	outline: 0;
+	height: 5rem;
+	width: 100%;
+	font-size: 12px;
+	margin: 0 0 20px;
+	padding: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 .input-field label:not(.label-icon).active {
-    -webkit-transform: translateY(-14px) scale(.8);
-    transform-origin: 0 0;
+	-webkit-transform: translateY(-14px) scale(.8);
+	transform-origin: 0 0;
 }
 .input-field label {
-    color: #535353;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    font-size: 23px;
-    cursor: text;
-    transition: -webkit-transform .2s ease-out;
-    text-align: initial;
-    -webkit-transform: translateY(12px);
-    transform: translateY(12px);
-    pointer-events: none;
+	color: #535353;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	font-size: 23px;
+	cursor: text;
+	transition: -webkit-transform .2s ease-out;
+	text-align: initial;
+	-webkit-transform: translateY(12px);
+	transform: translateY(12px);
+	pointer-events: none;
 }
 input:not([type]):focus:not([readonly]),
 input[type=date]:not(.browser-default):focus:not([readonly]),
@@ -161,3 +160,139 @@ div{
 		}
 	}
 }
+/*tarjetas y mapa*/
+.columnas-json {
+	margin: 30px;
+	.row {
+		.columnasChicas {
+			width: 60%;
+		}
+		.mapa {
+			width: 40%;
+			height: 100vh;
+		}
+	}
+}
+
+.tarjetasJson {
+	.foto {
+		padding: 0px;
+		height: auto;
+		border-top: 1px solid #EEEEEE;
+		.thumb {
+			padding-top: 20px;
+		}
+		.fa-heart-o {
+			color: white;
+			position: relative;
+			top: -229px;
+			left: 311px;
+		}
+		.precio {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			position: relative;
+			top: -85px;
+			left: 0;
+			padding-left: 15px;
+			width: 30%
+		}
+	}
+}
+
+.usuarioDatos {
+	margin-top: -85px;
+	.usuarioFoto {
+		border: 3px solid white;
+		position: relative;
+		left: 280px;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	p {
+		font-size: 15px;
+	}
+	i {
+		color: #53E4AF;
+	}
+}
+
+input {
+	border: 1px solid grey;
+}
+
+.container-mapa {
+	padding: 100px;
+	margin: 0px;
+	.row {
+		.tarjetasJson {
+			width: 100%;
+			padding: 20px;
+			.fotoprecio {
+				background-image: url(../img/thumbhabitacion.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.mapa {
+		width: 100%;
+		height: 100vh;
+		padding: 0;
+	}
+}
+
+.form {
+	position: absolute;
+	left: 0px;
+	bottom: 5%;
+	width: 100%;
+	height: auto;
+	input {
+		width: auto;
+		height: 60px;
+		border-radius: 13px;
+                            //paginación
+                            .paginacion {
+                            	small {
+                            		font-size: 15px;
+                            		padding-left: 51px;
+                            		font-weight: 700;
+                            	}
+                            }
+                            .pagination {
+                            	li {
+                            		background-color: white;
+                            		border: 1px solid grey;
+                            		a {
+                            			color: $star-color;
+                            		}
+                            	}
+                            	.flecha {
+                            		border: none;
+                            	}
+                            }
+                            .pagination {
+                            	li.active {
+                            		background-color: white;
+                            		border: 1px solid $star-color;
+                            		a {
+                            			color: $star-color;
+                            			font-weight: 700;
+                            		}
+                            	}
+                            	li.disabled {
+                            		background-color: white;
+                            		a {
+                            			color: $star-color;
+                            			font-weight: 700;
+                            		}
+                            	}
+                            }
+                        }
+                    }
+
