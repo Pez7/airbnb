@@ -20253,3 +20253,6 @@ if (jQuery) {
   };
 })(jQuery);
 
+  $(document).ready(function() {
+      $('select').material_select();
+  });
