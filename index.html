@@ -30,20 +30,32 @@
 			</div>
 		</div>
 		<div class="row">
+		  <ul id='drop-huespedes' class='dropdown-content'>
+		    <li><a href="#!">one</a></li>
+		    <li><a href="#!">two</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#!">three</a></li>
+		    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+		    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+		  </ul>
 			<div class="input-field col m3">
-				<input placeholder="Dónde" id="first_name" type="text" class="validate">
-				<label for="first_name">Dónde</label>
+				<input placeholder="Dónde" id="destino" type="text" class="validate">
+				<label for="destino">Dónde</label>
 			</div>
 			<div class="input-field col m3">
-				<input placeholder="Cúando" id="first_name" type="text" class="validate">
-				<label for="first_name">Cuándo</label>
+				<input placeholder="Cúando" id="cuando" type="text" class="validate">
+				<label for="cuando">Cuándo</label>
 			</div>
-			<div class="input-field col m3">
-				<input placeholder="Dónde '&#xf107'" id="first_name" type="text" class="validate">
-				<label for="first_name">Huéspedes</label>
+			<div id="select" class="col m3">
+				<label for="huespedes">Huéspedes</label>
+				<select name="Huespedes" id="Huespedes">
+					<option value="" disabled selected>Huésped</option>
+					<option value="adultos">Adultos</option>
+					<option value="ninios">Niños</option>
+				</select>
 			</div>
 			<div class="col m2">
-				<a href="#" class="btn">Buscar</a>
+				<a href="#" id="destinoBoton" class="btn">Buscar</a>
 			</div>
 		</div>
 	</section>
