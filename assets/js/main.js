@@ -2,24 +2,6 @@
 
      $('select').material_select();
 
-
-     //inicializar price range
-     var slider = document.getElementById('test-slider');
-     noUiSlider.create(slider, {
-         start: [20, 300000],
-         connect: true,
-         step: 1,
-         orientation: 'horizontal', // 'horizontal' or 'vertical'
-         range: {
-             'min': 0,
-             'max': 500000
-         },
-         format: wNumb({
-             decimals: 0
-         })
-     });
-
-
      /* Mapa*/
      var map;
      var miUbicacion;

@@ -9,7 +9,6 @@
     <script src="https://use.fontawesome.com/52df75c062.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules\materialize-css\extras\noUiSlider\nouislider.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
@@ -95,11 +94,15 @@
 
                 <div class="row">
                     <div class="col m3 l3">
-
+                        <p>Rango de precios</p>
                     </div>
 
-                    <div class="col m3 l3">
-                        <div id="test-slider"></div>
+                    <div class="col m9 l9">
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test5" min="0" max="500000" />
+                            </p>
+                        </form>
                     </div>
 
                 </div>
@@ -473,10 +476,9 @@
 </section> -->
 
 
-    <script src="node_modules\materialize-css\extras\noUiSlider\nouislider.js"></script>
-    <script src="dist/js/script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5exwEnih1W3mew_yhLFUeElrI7WWSm0&libraries=places&callback=initMap"></script>
 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5exwEnih1W3mew_yhLFUeElrI7WWSm0&libraries=places&callback=initMap"></script>
+    <script src="dist/js/script.js"></script>
 </body>
 
 </html>
